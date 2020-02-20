@@ -17,7 +17,7 @@
   * File is empty
   * File is not empty
 6. cat your file to see output
-  *Ex. cat a_out
+  * Ex. cat a_out
 
 ## Improvements
 *Please note this is still a work in progress. As of now, I have only gotten this code to work for example a and b*
