@@ -6,17 +6,18 @@
 #    By: vzhao <vzhao@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/19 11:56:47 by vzhao             #+#    #+#              #
-#    Updated: 2020/02/19 16:00:17 by vzhao            ###   ########.fr        #
+#    Updated: 2020/02/19 20:59:48 by vzhao            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 import os
 
-def subset_sum(file, OG, numbers, target, partial =[]):
+def subset_sum(file_path, file, OG, numbers, target, partial =[]):
 	"""
 	Function traverses through list of numbers to find the combination
 	that matches the target value (Function runs recursively)
 	Args:
+	(str) file_path = path to out the file
 	(file) file = the file id that we will write into
 	(list) OG = original set of numbers
 	(list) numbers = list of pizza types that is changed throughout recursion
@@ -39,9 +40,13 @@ def subset_sum(file, OG, numbers, target, partial =[]):
 		return 
 
 	for i in range(len(numbers)):
+		file.close()
+		if os.path.getsize(file_path) != 0:
+			return 
+		file = open(file_path, "w")
 		n = numbers[i]
 		remaining = numbers[i+1:]
-		subset_sum(file, OG, remaining, target, partial + [n])
+		subset_sum(file_path, file, OG, remaining, target, partial + [n])
 
 a_in = open("a_example.in", "r")	# This opens the text file and saves it into a variable
 b_in = open("b_small.in", "r")
@@ -72,9 +77,9 @@ else:
 
 while os.path.getsize(file_path) == 0:
 	a_out = open(file_path, "w")
-	subset_sum(a_out, pizzas, pizzas, slices)
+	subset_sum(file_path, a_out, pizzas, pizzas, slices)
 	slices -= 1
-	a_out.close()
+	# a_out.close()
 
 if os.path.getsize(file_path) == 0:
 	print "File is empty"
