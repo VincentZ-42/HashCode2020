@@ -2,6 +2,7 @@
 * [Notes](#Notes)
 * [Usage](#usage)
 * [Improvements](#improvements)
+* [References](#references)
 
 ## Notes
 * test.py is the source code used to solve all inputs
@@ -20,3 +21,7 @@
 
 ## Improvements
 *Please note this is still a work in progress. As of now, I have only gotten this code to work for example a and b*
+
+## References
+https://stackoverflow.com/questions/4632322/finding-all-possible-combinations-of-numbers-to-reach-a-given-sum
+https://stackoverflow.com/questions/1906717/splitting-integer-in-python
