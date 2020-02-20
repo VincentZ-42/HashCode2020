@@ -1,6 +1,10 @@
 ### Table of Contents
+* [Notes](#Notes)
 * [Usage](#usage)
 * [Improvements](#improvements)
+
+## Notes
+* test.py is the source code used to solve all inputs
 
 ## Usage
 1. git clone entire folder into desired location
