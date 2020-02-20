@@ -25,3 +25,8 @@
 ## References
 https://stackoverflow.com/questions/4632322/finding-all-possible-combinations-of-numbers-to-reach-a-given-sum
 https://stackoverflow.com/questions/1906717/splitting-integer-in-python
+https://docs.python.org/3/tutorial/inputoutput.html
+https://www.w3schools.com/python/python_file_write.asp
+Checkign if file is empty or not: https://thispointer.com/python-three-ways-to-check-if-a-file-is-empty/
+
+
