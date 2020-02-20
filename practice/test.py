@@ -6,7 +6,7 @@
 #    By: vzhao <vzhao@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/19 11:56:47 by vzhao             #+#    #+#              #
-#    Updated: 2020/02/19 15:52:24 by vzhao            ###   ########.fr        #
+#    Updated: 2020/02/19 16:00:17 by vzhao            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,9 +55,9 @@ e_in = open("e_also_big.in", "r")
 # a_in --> b_in (input from example b)
 # a_out --> b_out (output of example b)
 # "a_out" --> b_out (path name of newly created output file)
-lines = a_in.readlines()
-a_out = open("a_out", "w")
-file_path = "a_out"
+lines = c_in.readlines()		# Change a_in to b_in
+a_out = open("c_out", "w")		# Change "a_out" to b_out
+file_path = "c_out"				# Change "a_out" to b_out
 #---------------------------------------------------------------------------------------
 
 slices, types = map(int, lines[0].split())		# Splits the first line into int variales
