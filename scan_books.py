@@ -6,7 +6,7 @@
 #    By: vzhao <vzhao@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/20 10:11:23 by vzhao             #+#    #+#              #
-#    Updated: 2020/02/20 13:18:59 by vzhao            ###   ########.fr        #
+#    Updated: 2020/02/20 13:32:24 by vzhao            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -99,6 +99,8 @@ while days_for_scanning > 0:
 	print ("potential points = ", potential_points)
 	# days_for_scanning -= res[lib_count][1]['signup']
 	if days_for_scanning - res[lib_count][1]['signup'] > 0:
+		if days_for_scanning > res[lib_count][1]['ship']:
+			
 		if res[lib_count][1]['used'] == False:
 			points += potential_points
 			res[lib_count][1]['used'] = True
