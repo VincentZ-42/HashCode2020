@@ -29,5 +29,6 @@ https://docs.python.org/3/tutorial/inputoutput.html <br/>
 https://www.w3schools.com/python/python_file_write.asp <br/>
 Checking if file is empty or not: https://thispointer.com/python-three-ways-to-check-if-a-file-is-empty/ <br/>
 https://www.101computing.net/python-reading-a-text-file/
+https://www.pythonforbeginners.com/files/reading-and-writing-files-in-python
 
 
